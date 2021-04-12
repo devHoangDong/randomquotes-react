@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.3),
+    hsla(0, 0%, 100%, 0.3)), linear-gradient(180deg, rgba(0, 113,
+     206, 0.15), rgba(0, 113, 206, 0.15)), url(img/001.jpg);
+     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+}
+.location {
+    margin: 0 auto;
+    position: relative;
+    min-width: 300px;
+}
+.location .location-timezone .image {
+    display: inline-block;
+}
+.location .location-timezone {
+    font-size: 2rem;
+    color: white;
+    display: block;
+}
+.location .location-time {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.location .location-time .location-time--text{
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.5rem;
+    color: white;
+    display: inline-block;
+}
+.temprature {
+    margin: 0 auto;
+    max-width: 100%;
+}
+.temprature .degree-section {
+    position: relative;
+}
+.temprature .degree-section span {
+    position: absolute;
+    line-height: 1.5em;
+    margin-top: -0.75em;
+    top: 50%;
+    font-size: 1.25rem;
+}
+.temprature .degree-section * {
+    display: inline-block;
+}
+.temprature .temprature-description {
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    font-style: italic;
+}
