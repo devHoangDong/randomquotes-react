@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './app.css';
 import Dich from './components/Dich';
 import { useState } from 'react';
 import { useEffect } from 'react';
