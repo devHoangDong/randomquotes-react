@@ -1,68 +1,163 @@
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 body {
-    font-family: sans-serif;
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.3),
-    hsla(0, 0%, 100%, 0.3)), linear-gradient(180deg, rgba(0, 113,
-     206, 0.15), rgba(0, 113, 206, 0.15)), url(img/001.jpg);
-     object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    margin: 0 auto;
-    min-height: 100vh;
-    text-align: center;
-    color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 113, 206, 0.15)), to(rgba(0, 113, 206, 0.15))), url(img/001.jpg);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(180deg, rgba(0, 113, 206, 0.15), rgba(0, 113, 206, 0.15)), url(img/001.jpg);
+  background-repeat: no-repeat center center fixed;
+  background-size: cover;
 }
-.location {
-    margin: 0 auto;
-    position: relative;
-    min-width: 300px;
+
+.body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  position: relative;
 }
-.location .location-timezone .image {
-    display: inline-block;
+
+.body-container .body-title {
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
-.location .location-timezone {
-    font-size: 2rem;
-    color: white;
-    display: block;
+
+.body-container .getquote .getquote-button {
+  background-color: #1da1f2;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  line-height: 2rem;
+  border: solid 0;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  margin: 2rem 0;
+  -webkit-box-shadow: 8px 8px 8px #888888;
+          box-shadow: 8px 8px 8px #888888;
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+  outline: none;
 }
-.location .location-time {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
+
+.body-container .getquote .getquote-button:hover {
+  cursor: pointer;
 }
-.location .location-time .location-time--text{
-    height: 64px;
-    line-height: 64px;
-    font-size: 1.5rem;
-    color: white;
-    display: inline-block;
+
+.body-container .getquote .getquote-button:active {
+  -webkit-transform: translateY(3px) translateX(3px);
+          transform: translateY(3px) translateX(3px);
+  -webkit-box-shadow: 8px 6px 8px #888888;
+          box-shadow: 8px 6px 8px #888888;
+  border: none;
 }
-.temprature {
-    margin: 0 auto;
-    max-width: 100%;
+
+.body-container .getquote .getquote-button:focus {
+  border: none;
 }
-.temprature .degree-section {
-    position: relative;
+
+.body-container .quote-container {
+  height: 600px;
+  margin: 1rem auto;
+  max-width: 75rem;
 }
-.temprature .degree-section span {
-    position: absolute;
-    line-height: 1.5em;
-    margin-top: -0.75em;
-    top: 50%;
-    font-size: 1.25rem;
+
+.body-container .quote-container .quote {
+  font-size: 3.5rem;
+  font-style: italic;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  max-width: 75rem;
+  margin-bottom: 1rem;
 }
-.temprature .degree-section * {
-    display: inline-block;
+
+.body-container .quote-container .author {
+  font-size: 1.5rem;
+  color: #34495e;
+  font-family: 'Work Sans', sans-serif;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
-.temprature .temprature-description {
-    margin-top: 1.25rem;
-    font-size: 1.25rem;
-    font-style: italic;
+
+.body-container .quote-container .quote-tran {
+  font-size: 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 1rem;
 }
+
+.body-container .quote-container .share .share-button {
+  padding: 1px 10px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  background-color: #1da1f2;
+  width: 76px;
+  margin-right: 10px;
+}
+
+.body-container .quote-container .share .share-button a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Helvetica Neue',Arial,sans-serif;
+  line-height: 26px;
+  font-size: 13px;
+}
+
+.body-container .quote-container .share .share-button a i {
+  font-size: 17px;
+}
+
+.body-container .quote-container .share .share-button:hover {
+  cursor: pointer;
+  background-color: #1a76cc;
+}
+
+.body-container .trans-button {
+  padding: 4px 10px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  background-color: #85929e;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.body-container .trans-button:hover {
+  cursor: pointer;
+}
+
+.body-container .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=App.css.map */
